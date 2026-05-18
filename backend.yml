@@ -134,9 +134,7 @@ Resources:
                 Resource: !GetAtt RoomsTable.Arn
   ECSSecurityGroup:
     Type: AWS::EC2::SecurityGroup
-    Properties:git add .
-git commit -m "Add ECS"
-git push
+    Properties:
       GroupDescription: Security group for ECS tasks
       VpcId: !Ref VPC
       SecurityGroupIngress:
